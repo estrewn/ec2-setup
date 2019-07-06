@@ -1,7 +1,7 @@
 # For setting up an ec2 t3.medium machine with Amazon AMI 2
 
-1) ssh to the machine as ec2-user
-2) in Route 53, create a record set for the chosen domain name that points to the machine's IP address
+1) in Route 53, create a record set for the chosen domain name that points to the machine's IP address
+2) ssh to the machine as ec2-user
 3) sudo yum update
 4) sudo yum install emacs
 5) wget https://dl.eff.org/certbot-auto
