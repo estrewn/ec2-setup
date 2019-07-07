@@ -7,7 +7,7 @@
 5) ssh-keygen -t rsa -b 4096
 6) eval $(ssh-agent -s)
 7) ssh-add ~/.ssh/id_rsa
-8) add the ssh key  ~/.ssh/id_rsa to your github account
+8) add the public key  ~/.ssh/id_rsa.pub to your github account
 9) wget https://dl.eff.org/certbot-auto
 10) sudo mv certbot-auto /usr/local/bin/certbot-auto
 11) sudo chown root /usr/local/bin/certbot-auto
