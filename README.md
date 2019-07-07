@@ -10,3 +10,4 @@
 8) sudo chmod 0755 /usr/local/bin/certbot-auto
 9) in /usr/local/bin/certbot-auto, replace the line `elif [ -f /etc/issue ] && grep -iq "Amazon Linux" /etc/issue ; then` with `elif grep -i "Amazon Linux" /etc/issue > /dev/null 2>&1 || grep 'cpe:.*:amazon_linux:2' /etc/os-release > /dev/null 2>&1; then`
 10) sudo /usr/local/bin/certbot-auto certonly --standalone --debug 
+11) sudo yum install git
