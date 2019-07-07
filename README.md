@@ -15,3 +15,4 @@
 13) in /usr/local/bin/certbot-auto, replace the line `elif [ -f /etc/issue ] && grep -iq "Amazon Linux" /etc/issue ; then` with `elif grep -i "Amazon Linux" /etc/issue > /dev/null 2>&1 || grep 'cpe:.*:amazon_linux:2' /etc/os-release > /dev/null 2>&1; then`
 14) sudo /usr/local/bin/certbot-auto certonly --standalone --debug 
 15) sudo yum install git
+16) pip install cherrypy
