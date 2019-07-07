@@ -4,10 +4,14 @@
 2) ssh to the machine as ec2-user
 3) sudo yum update
 4) sudo yum install emacs
-5) wget https://dl.eff.org/certbot-auto
-6) sudo mv certbot-auto /usr/local/bin/certbot-auto
-7) sudo chown root /usr/local/bin/certbot-auto
-8) sudo chmod 0755 /usr/local/bin/certbot-auto
-9) in /usr/local/bin/certbot-auto, replace the line `elif [ -f /etc/issue ] && grep -iq "Amazon Linux" /etc/issue ; then` with `elif grep -i "Amazon Linux" /etc/issue > /dev/null 2>&1 || grep 'cpe:.*:amazon_linux:2' /etc/os-release > /dev/null 2>&1; then`
-10) sudo /usr/local/bin/certbot-auto certonly --standalone --debug 
-11) sudo yum install git
+5) ssh-keygen -t rsa -b 4096
+6) eval $(ssh-agent -s)
+7) ssh-add ~/.ssh/id_rsa
+8) add the ssh key  ~/.ssh/id_rsa to your github account
+9) wget https://dl.eff.org/certbot-auto
+10) sudo mv certbot-auto /usr/local/bin/certbot-auto
+11) sudo chown root /usr/local/bin/certbot-auto
+12) sudo chmod 0755 /usr/local/bin/certbot-auto
+13) in /usr/local/bin/certbot-auto, replace the line `elif [ -f /etc/issue ] && grep -iq "Amazon Linux" /etc/issue ; then` with `elif grep -i "Amazon Linux" /etc/issue > /dev/null 2>&1 || grep 'cpe:.*:amazon_linux:2' /etc/os-release > /dev/null 2>&1; then`
+14) sudo /usr/local/bin/certbot-auto certonly --standalone --debug 
+15) sudo yum install git
