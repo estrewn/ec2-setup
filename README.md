@@ -18,3 +18,6 @@
 16) sudo yum install mysql-devel
 17) sudo pip install cherrypy
 18) sudo pip install MySQL-python
+19) wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+20) sudo yum install epel-release-latest-7.noarch.rpm 
+21) sudo yum install clamav freshclam clamav-update rkhunter 
