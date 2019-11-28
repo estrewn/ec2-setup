@@ -21,3 +21,4 @@
 19) sudo pip install cherrypy
 20) sudo pip install MySQL-python
 21) sudo yum install clamav freshclam clamav-update rkhunter 
+22) sudo freshclam
