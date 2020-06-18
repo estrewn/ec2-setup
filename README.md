@@ -1,4 +1,4 @@
-# For setting up an ec2 t3.medium machine with Amazon Linux 2 AMI
+# for setting up an ec2 t3.medium machine with Amazon Linux 2 AMI
 
 1) in Route 53, create a record set for the chosen domain name that points to the machine's IP address
 2) ssh to the machine as ec2-user
