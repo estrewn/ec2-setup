@@ -17,8 +17,9 @@
 15) in /usr/local/bin/certbot-auto, replace the line `elif [ -f /etc/issue ] && grep -iq "Amazon Linux" /etc/issue ; then` with `elif grep -i "Amazon Linux" /etc/issue > /dev/null 2>&1 || grep 'cpe:.*:amazon_linux:2' /etc/os-release > /dev/null 2>&1; then`
 16) sudo /usr/local/bin/certbot-auto certonly --standalone --debug 
 17) sudo yum install git
-18) sudo yum install mysql-devel
-19) sudo pip install cherrypy
-20) sudo pip install MySQL-python
-21) sudo yum install clamav freshclam clamav-update rkhunter 
-22) sudo freshclam
+18) sudo yum install mysql
+19) sudo yum install mysql-devel
+20) sudo pip install cherrypy
+21) sudo pip install MySQL-python
+22) sudo yum install clamav freshclam clamav-update rkhunter 
+23) sudo freshclam
